@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page de Profil</title>
+  <title>RK Performances</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="navbar">
@@ -20,49 +29,151 @@
       </nav>
     </div>
     <div id="profile">
-      <div class="photo-de-profil"><img src="images/photo de profil.jpg" alt="Photo de Profil" />
+      <div class="photo-de-profil"><img src="images/profil.jpg" alt="Photo de Profil" />
       </div>
     </div>
   </header>
-  <section id="edito">
-    <p>Edito/citation/carrousel</p>
-  </section>
+  <div id="edito">
+    <div class="carousel-container">
+      <div class="carousel">
+        <span class="word">"La voiture de
+          sport est un rêve
+          de gamin devenu
+          réalité. Elle nous
+          donne le frisson
+          de l'excitation et
+          de l'aventure."</span>
+        <span class="word">"La route est longue.
+          Mais avec une voiture
+          fiable, chaque
+          destination est à
+          portée de main."</span>
+        <span class="word">"Vivre c'est comme conduire une voiture,
+          c'est en avant qu'il faut regarder en jetant
+          "occasionnellement" un regard en arrière."</span>
+        <span class="word">"On peut limiter la vitesse
+          mais rien ne peut freiner la passion ... "</span>
+        <span class="word">"Les routes droites sont pour les
+          voitures rapides, les virages sont
+          pour les conducteurs rapides."</span>
+      </div>
+    </div>
+  </div>
   <section id="projects">
-    <h2>Nos Produits</h2>
+    <h2>Nos Projets</h2>
     <div class="project-grid">
-      <div class="project-item">Projet 1</div>
-      <div class="project-item">Projet 2</div>
-      <div class="project-item">Projet 3</div>
-      <div class="project-item">Projet 4</div>
-      <div class="project-item">Projet 5</div>
-      <div class="project-item">Projet 6</div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/conception-turbo.webp" alt="Photo de Turbo" />
+          </div>
+          <div class="flip-box-back">
+            <p>Conception de Turbo personnalisé</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/Echappement-sur-mesure.jpg" alt="Photo d'échappement" />
+          </div>
+          <div class="flip-box-back">
+            <p>Échappement sur mesure</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/cartographie-moteurs.jpg" alt="Cartographie sur mesure" />
+          </div>
+          <div class="flip-box-back">
+            <p>Cartographie sur mesure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-grid">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/Préparation-esthétique.jpg" alt="Préparation esthétique" />
+          </div>
+          <div class="flip-box-back">
+            <p>Préparation esthétique</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/ciel-etoile.webp" alt="Ciel étoilé" />
+          </div>
+          <div class="flip-box-back">
+            <p>Ciel étoilé</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="images/detailling.jpg" alt="Detailling" />
+          </div>
+          <div class="flip-box-back">
+            <p>Detailling</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section id="contact">
     <h2>Prenez-contact!</h2>
     <form>
-      <label>Prénom
-        <input type="text" name="first_name" placeholder="Votre prénom.." required>
-      </label>
-      <label>Nom
-        <input type="text" name="last_name" placeholder="Votre nom.." required>
-      </label>
-      <label>E-mail
-        <input type="text" name="mail" placeholder="Votre mail.." required>
-      </label>
-      <label>Votre demande
-        <textarea name="subject" placeholder="Write something.."></textarea required>
-      </label>
+      <label for="first_name">Prénom :</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Votre prénom.." required>     
+      <label for="last_name">Nom :</label>
+      <input type="text" id="last_name" name="last_name" placeholder="Votre nom.." required>
+      <label for="mail">E-Mail :</label>
+      <input type="text" id="mail" name="mail" placeholder="Votre e-mail.." required>
+      <label for="subject">Votre message :</label>
+      <textarea id="subject" name="subject" placeholder="Écrivez votre texte.."></textarea>      
       <button type="submit">Envoyer</button>
     </form>
   </section>
   <footer>
     <p>Mes Réseaux</p>
     <div class="social-links">
-      <a href="#">&#xf09a;</a>
-      <a href="#">&#xf099;</a>
-      <a href="#">&#xf0e1;</a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <strong class="fab fa-facebook-f"></strong>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <strong class="fab fa-twitter"></strong>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <strong class="fab fa-linkedin-in"></strong>
+      </a>
     </div>
   </footer>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const words = document.querySelectorAll(".carousel .word");
+      let currentIndex = 0;
+
+      function showNextWord() {
+        words[currentIndex].classList.remove("active"); // Cache l'élément actuel
+        currentIndex = (currentIndex + 1) % words.length; // Passe au suivant
+        words[currentIndex].classList.add("active"); // Montre le suivant
+      }
+
+      // Initialisation : activer la première citation
+      words[currentIndex].classList.add("active");
+
+      // Changer de citation toutes les 3 secondes
+      setInterval(showNextWord, 5000); // Change toutes les 5 secondes
+    });
+
+  </script>
 </body>
+
 </html>
